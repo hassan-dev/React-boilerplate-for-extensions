@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
 
 export default class ButtonComponent extends Component {
+    constructor(prop){
+        super(props)
+        thi.state ={
+            name:''
+        }
+    }
     render() {
         return (
             <div>
