@@ -1,4 +1,4 @@
-# react-extension-boilerplate
+# React-boilerplate-for-extensions
 react boilerplate for chrome extensions
 ## Features
     1. Redux
