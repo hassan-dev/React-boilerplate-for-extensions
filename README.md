@@ -1,4 +1,4 @@
-# react-extension-boilerplate
+# React-boilerplate-for-extensions
 react boilerplate for chrome extensions
 ## Features
     1. Redux
@@ -10,7 +10,7 @@ react boilerplate for chrome extensions
 ## Installation
     1. clone it
     2. run command to install node modules 'npm i'
-    3. create build by running 'npm run buil'
+    3. create build by running 'npm run build'
     4. go to chrome extenion tab 'chrome://extensions/'
     5. turn on your developer mode
     6. click on load unpacked
