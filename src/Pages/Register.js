@@ -28,13 +28,11 @@ export default class Register extends Component {
 
             // api call 
             var apiResponse = await api('todos/1','get', null, null)
-            console.log("api response", apiResponse)
-            // chrome.notifications.create('1e33e')
-            console.log("crhome", chrome.notifications)
-            chrome.storage.sync.set({ 'name': this.state.fullName });
-            chrome.storage.sync.get("name", function (obj) {
-                console.log("name obj", obj)
-            });
+
+            // chrome storage api
+           chrome.storage.sync.set({ 'name': this.state.fullName }, ()=>{
+            this.props.history.push('/profile')
+        });
 
         }
 
