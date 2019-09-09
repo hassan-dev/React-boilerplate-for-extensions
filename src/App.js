@@ -1,9 +1,11 @@
+    /*global chrome*/
+
 import React, { Component } from 'react';
-import { Button, Dropdown, Container, Row, Col } from 'react-bootstrap';
 import './App.css';
 import { connect } from 'react-redux'
 import loginAction from './Redux/Actions/LoginAction'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import Home from './Pages/Home'
 import Login from './Pages/Login'
 import Register from './Pages/Register'
@@ -11,9 +13,9 @@ import Register from './Pages/Register'
 class App extends Component {
   render() {
     return (
-      <BrowserRouter>
+      <Router >
 
-        <div className="App">
+        <div style={{padding:20,minWidth:300}}>
           <Switch>
             <Route
               exact
@@ -34,8 +36,7 @@ class App extends Component {
           </Switch>
         </div>
 
-      </BrowserRouter>
-
+      </Router>
     )
   }
 }
